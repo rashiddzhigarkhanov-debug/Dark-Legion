@@ -1,76 +1,148 @@
-  gap: 10px;
-            background: #1f1f23;
-            padding: 8px 18px;
-            border-radius: 24px;
-            border: 1px solid #29292e;
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[DN99] DARK LEGION — Фан-сайт альянса</title>
+    <style>
+        body {
+            background-color: #121214 !important;
+            color: #ffffff !important;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
         }
-        .creator-box svg {
-            width: 20px;
-            height: 20px;
-            fill: #a8a8b3;
+        .nav-bar {
+            width: 100%;
+            background-color: #1f1f23;
+            border-bottom: 1px solid #29292e;
+            padding: 16px 20px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
         }
-        .creator-box span {
-            font-size: 13px;
-            color: #a8a8b3;
+        .nav-container {
+            width: 100%;
+            max-width: 800px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        .creator-box strong {
+        .nav-logo {
+            font-weight: bold;
+            font-size: 16px;
             color: #ffffff;
+            text-decoration: none;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+        header {
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 36px;
+            font-weight: 800;
+            margin: 0 0 10px 0;
+            color: #ffffff;
+        }
+        header .desc {
+            font-size: 16px;
+            color: #a8a8b3;
+            line-height: 1.6;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            margin-bottom: 60px;
+        }
+        .card {
+            background-color: #1f1f23;
+            border: 1px solid #29292e;
+            border-radius: 16px;
+            padding: 32px;
+            text-decoration: none;
+            color: #ffffff !important;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            border-color: #41414d;
+            background-color: #26262b;
+        }
+        .card-icon {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .card-title {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #ffffff !important;
+        }
+        .card-description {
+            font-size: 15px;
+            color: #a8a8b3;
+            margin-bottom: 20px;
+        }
+        .card-action {
+            font-size: 15px;
             font-weight: 600;
+            color: #ff4747;
+        }
+        footer {
+            border-top: 1px solid #29292e;
+            padding-top: 30px;
+            margin-top: auto;
+            width: 100%;
+            text-align: center;
+        }
+        footer p {
+            font-size: 13px;
+            color: #737380;
         }
     </style>
 </head>
 <body>
-
     <nav class="nav-bar">
         <div class="nav-container">
             <a href="#" class="nav-logo">[DN99] DARK LEGION</a>
-            <div class="nav-links">
-                <span>Главная</span>
-                <span>Дуэль</span>
-                <span>Аватарка</span>
-            </div>
         </div>
     </nav>
-
     <div class="container">
         <header>
-            <div class="sub-title">[DN99] DARK LEGION</div>
             <h1>Святилище альянса</h1>
-            <div class="game-info">
-                <span>• Last Asylum: Plague</span>
-                <span>• сервер #198</span>
-            </div>
-            <div class="desc">
-                Всё, что нужно, чтобы вместе выигрывать дуэли и расти быстрее: что делать сегодня, что копить к завтра и фирменная аватарка альянса.
-            </div>
+            <div class="desc">Всё, что нужно, чтобы вместе выигрывать дуэли и расти быстрее: расписание и аватарки альянса.</div>
         </header>
-
         <main class="grid-container">
             <a href="duel.html" class="card">
                 <div class="card-icon">⚔️</div>
                 <div class="card-title">Дуэль альянсов</div>
-                <div class="card-description">Текущая фаза, таймер до смены и чек-лист: что тратить сегодня и что придержать.</div>
+                <div class="card-description">Текущая фаза, таймер до смены и чек-лист: что делать сегодня и что копить.</div>
                 <div class="card-action">Открыть план →</div>
             </a>
-
             <a href="avatar.html" class="card">
                 <div class="card-icon">🖼️</div>
                 <div class="card-title">Аватарка с рамкой</div>
-                <div class="card-description">Загрузите фото, подвиньте, приблизьте — и скачайте аватарку в рамке альянса.</div>
+                <div class="card-description">Загрузите
+
+
+то, настройте масштаб и скачайте аватарку альянса.</div>
                 <div class="card-action">Сделать аватарку →</div>
             </a>
         </main>
-
         <footer>
-            <div class="copyright">
-                <strong>[DN99] DARK LEGION</strong> • сервер #198 — Фан-сайт альянса. Не связан с разработчиком игры.
-            </div>
-            <div class="creator-box">
-                <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-                <span>Создатель сайта: <strong>Legion [DN99]</strong></span>
-            </div>
+            <p>© 2026 [DN99] DARK LEGION • Создатель сайта: Legion [DN99]</p>
         </footer>
     </div>
-
 </body>
-</html> c
+</html> фо
